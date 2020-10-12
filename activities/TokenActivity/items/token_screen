@@ -1,0 +1,50 @@
+{
+    "@context": [
+        "https://raw.githubusercontent.com/ReproNim/reproschema/master/contexts/generic"
+    ],
+    "@type": "reproschema:Field",
+    "@id": "token_screen",
+    "question": "Token Screen",
+    "ui": {
+        "inputType": "radio",
+        "allow": [
+            "dontKnow"
+        ]
+    },
+    "responseOptions": {
+        "valueType": "xsd:token",
+        "schema:minValue": 0,
+        "schema:maxValue": 5,
+        "multipleChoice": true,
+        "choices": [{
+            "@type": "schema:option",
+            "schema:name": "Paid attention",
+            "schema:value": 0
+        },
+        {
+            "schema:name": "Cleaned up room",
+            "@type": "schema:option",
+            "schema:value": 1
+        },
+        {
+            "schema:name": "Brushed teeth",
+            "@type": "schema:option",
+            "schema:value": 2
+        },
+        {
+            "schema:name": "Lied difficult",
+            "@type": "schema:option",
+            "schema:value": 3
+        },
+        {
+            "schema:name": "Showed aggression",
+            "@type": "schema:option",
+            "schema:value": 4
+        },
+        {
+            "schema:name": "Used foul language",
+            "@type": "schema:option",
+            "schema:value": 5
+        }]
+    }
+}
